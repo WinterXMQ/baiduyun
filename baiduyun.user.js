@@ -439,6 +439,10 @@
       //console.log(list_view);
       observer.observe(list_view, options);
       observer.observe(grid_view, options);
+
+      new MutationObserver(function (mutations) {
+        $('.QDDOQB').css('padding-left', 320);
+      }).observe(document.querySelector('.QDDOQB'), {attributes: true});
     }
 
     //添加助手按钮
